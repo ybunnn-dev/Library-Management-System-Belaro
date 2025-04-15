@@ -16,5 +16,27 @@ namespace Library_Management_System___Belaro
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            this.panel3.BackColor = Color.FromArgb(120, 0, 0, 0);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Student_Dashboard dashboard = new Student_Dashboard();
+            dashboard.Show();
+            this.Hide(); // Optional: hide the current form
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
