@@ -1854,5 +1854,36 @@ namespace Library_Management_System___Belaro
         {
 
         }
+
+        private void panel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Create an OpenFileDialog to select Excel files
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            // Set filter options and filter index
+            openFileDialog.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm";
+            openFileDialog.FilterIndex = 1;
+
+            // Restore directory after closing
+            openFileDialog.RestoreDirectory = true;
+
+            // Show the dialog and check if user clicked OK
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Get the selected file path
+                string excelFilePath = openFileDialog.FileName;
+
+                // Create an instance of the Requests form and pass the file path
+                Requests requestsForm = new Requests(excelFilePath);
+
+                // Show the Requests form
+                requestsForm.Show();
+            }
+        }
     }
 }

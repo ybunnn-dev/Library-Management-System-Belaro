@@ -71,29 +71,30 @@
             this.authors_grid = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.staff_panel = new System.Windows.Forms.Panel();
-            this.add_staff = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
             this.staff_grid = new System.Windows.Forms.DataGridView();
+            this.label16 = new System.Windows.Forms.Label();
+            this.add_staff = new System.Windows.Forms.Button();
             this.report_panel = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.history_grid = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
-            this.total_borrowed = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.returned_ontime = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.returned_overdue = new System.Windows.Forms.Label();
+            this.history_grid = new System.Windows.Forms.DataGridView();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.pending_overdue = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.returned_overdue = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.returned_ontime = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.total_borrowed = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.authors_panel.SuspendLayout();
             this.report_button.SuspendLayout();
             this.staff_button.SuspendLayout();
@@ -115,13 +116,13 @@
             this.staff_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.staff_grid)).BeginInit();
             this.report_panel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.history_grid)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // authors_panel
@@ -497,12 +498,13 @@
             // 
             // books_panel
             // 
+            this.books_panel.Controls.Add(this.button3);
             this.books_panel.Controls.Add(this.addBookButton);
             this.books_panel.Controls.Add(this.books_grid);
             this.books_panel.Controls.Add(this.label11);
             this.books_panel.Location = new System.Drawing.Point(356, 0);
             this.books_panel.Name = "books_panel";
-            this.books_panel.Size = new System.Drawing.Size(1204, 800);
+            this.books_panel.Size = new System.Drawing.Size(1201, 800);
             this.books_panel.TabIndex = 4;
             // 
             // addBookButton
@@ -592,16 +594,15 @@
             this.staff_panel.Size = new System.Drawing.Size(1201, 797);
             this.staff_panel.TabIndex = 4;
             // 
-            // add_staff
+            // staff_grid
             // 
-            this.add_staff.Font = new System.Drawing.Font("Poppins Medium", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_staff.Location = new System.Drawing.Point(953, 28);
-            this.add_staff.Name = "add_staff";
-            this.add_staff.Size = new System.Drawing.Size(169, 33);
-            this.add_staff.TabIndex = 4;
-            this.add_staff.Text = "Add Staff";
-            this.add_staff.UseVisualStyleBackColor = true;
-            this.add_staff.Click += new System.EventHandler(this.button2_Click);
+            this.staff_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.staff_grid.Location = new System.Drawing.Point(37, 78);
+            this.staff_grid.Name = "staff_grid";
+            this.staff_grid.RowHeadersWidth = 51;
+            this.staff_grid.RowTemplate.Height = 24;
+            this.staff_grid.Size = new System.Drawing.Size(1120, 702);
+            this.staff_grid.TabIndex = 6;
             // 
             // label16
             // 
@@ -615,15 +616,16 @@
             this.label16.TabIndex = 5;
             this.label16.Text = "Staffs";
             // 
-            // staff_grid
+            // add_staff
             // 
-            this.staff_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.staff_grid.Location = new System.Drawing.Point(37, 78);
-            this.staff_grid.Name = "staff_grid";
-            this.staff_grid.RowHeadersWidth = 51;
-            this.staff_grid.RowTemplate.Height = 24;
-            this.staff_grid.Size = new System.Drawing.Size(1120, 702);
-            this.staff_grid.TabIndex = 6;
+            this.add_staff.Font = new System.Drawing.Font("Poppins Medium", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_staff.Location = new System.Drawing.Point(953, 28);
+            this.add_staff.Name = "add_staff";
+            this.add_staff.Size = new System.Drawing.Size(169, 33);
+            this.add_staff.TabIndex = 4;
+            this.add_staff.Text = "Add Staff";
+            this.add_staff.UseVisualStyleBackColor = true;
+            this.add_staff.Click += new System.EventHandler(this.button2_Click);
             // 
             // report_panel
             // 
@@ -636,17 +638,52 @@
             this.report_panel.TabIndex = 7;
             this.report_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.report_panel_Paint);
             // 
-            // label17
+            // panel14
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label17.Location = new System.Drawing.Point(28, 28);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(131, 50);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "Reports";
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.button2);
+            this.panel14.Controls.Add(this.history_grid);
+            this.panel14.Controls.Add(this.label18);
+            this.panel14.Location = new System.Drawing.Point(37, 289);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1102, 491);
+            this.panel14.TabIndex = 13;
+            this.panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.panel14_Paint);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Poppins Medium", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(946, 22);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(125, 38);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Export Data";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // history_grid
+            // 
+            this.history_grid.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.history_grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.history_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.history_grid.Location = new System.Drawing.Point(31, 72);
+            this.history_grid.Name = "history_grid";
+            this.history_grid.RowHeadersWidth = 51;
+            this.history_grid.RowTemplate.Height = 24;
+            this.history_grid.Size = new System.Drawing.Size(1040, 392);
+            this.history_grid.TabIndex = 14;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label18.Location = new System.Drawing.Point(19, 22);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(301, 50);
+            this.label18.TabIndex = 14;
+            this.label18.Text = "Transaction History";
             // 
             // panel1
             // 
@@ -660,46 +697,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1102, 195);
             this.panel1.TabIndex = 7;
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.total_borrowed);
-            this.panel2.Location = new System.Drawing.Point(13, 52);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(258, 125);
-            this.panel2.TabIndex = 8;
-            // 
-            // panel11
-            // 
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label21);
-            this.panel11.Controls.Add(this.returned_ontime);
-            this.panel11.Location = new System.Drawing.Point(287, 52);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(258, 125);
-            this.panel11.TabIndex = 9;
-            // 
-            // panel12
-            // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.label23);
-            this.panel12.Controls.Add(this.returned_overdue);
-            this.panel12.Location = new System.Drawing.Point(559, 52);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(258, 125);
-            this.panel12.TabIndex = 10;
-            // 
-            // panel13
-            // 
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.label25);
-            this.panel13.Controls.Add(this.pending_overdue);
-            this.panel13.Location = new System.Drawing.Point(826, 52);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(258, 125);
-            this.panel13.TabIndex = 11;
             // 
             // comboBox1
             // 
@@ -717,123 +714,15 @@
             this.comboBox1.Text = "All Time";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
-            // panel14
+            // panel13
             // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.button2);
-            this.panel14.Controls.Add(this.history_grid);
-            this.panel14.Controls.Add(this.label18);
-            this.panel14.Location = new System.Drawing.Point(37, 289);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1102, 491);
-            this.panel14.TabIndex = 13;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label18.Location = new System.Drawing.Point(19, 22);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(301, 50);
-            this.label18.TabIndex = 14;
-            this.label18.Text = "Transaction History";
-            // 
-            // history_grid
-            // 
-            this.history_grid.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.history_grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.history_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.history_grid.Location = new System.Drawing.Point(31, 72);
-            this.history_grid.Name = "history_grid";
-            this.history_grid.RowHeadersWidth = 51;
-            this.history_grid.RowTemplate.Height = 24;
-            this.history_grid.Size = new System.Drawing.Size(1040, 392);
-            this.history_grid.TabIndex = 14;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Poppins Medium", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(946, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 38);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Export Data";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // total_borrowed
-            // 
-            this.total_borrowed.AutoSize = true;
-            this.total_borrowed.BackColor = System.Drawing.Color.Transparent;
-            this.total_borrowed.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total_borrowed.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.total_borrowed.Location = new System.Drawing.Point(17, 49);
-            this.total_borrowed.Name = "total_borrowed";
-            this.total_borrowed.Size = new System.Drawing.Size(50, 50);
-            this.total_borrowed.TabIndex = 16;
-            this.total_borrowed.Text = "10";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label20.Location = new System.Drawing.Point(22, 26);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(141, 23);
-            this.label20.TabIndex = 17;
-            this.label20.Text = "Total Borrowed Book";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label21.Location = new System.Drawing.Point(25, 23);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(128, 23);
-            this.label21.TabIndex = 19;
-            this.label21.Text = "Returned On-Time";
-            // 
-            // returned_ontime
-            // 
-            this.returned_ontime.AutoSize = true;
-            this.returned_ontime.BackColor = System.Drawing.Color.Transparent;
-            this.returned_ontime.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returned_ontime.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.returned_ontime.Location = new System.Drawing.Point(20, 46);
-            this.returned_ontime.Name = "returned_ontime";
-            this.returned_ontime.Size = new System.Drawing.Size(50, 50);
-            this.returned_ontime.TabIndex = 18;
-            this.returned_ontime.Text = "10";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label23.Location = new System.Drawing.Point(20, 23);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(127, 23);
-            this.label23.TabIndex = 21;
-            this.label23.Text = "Returned Overdue";
-            // 
-            // returned_overdue
-            // 
-            this.returned_overdue.AutoSize = true;
-            this.returned_overdue.BackColor = System.Drawing.Color.Transparent;
-            this.returned_overdue.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returned_overdue.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.returned_overdue.Location = new System.Drawing.Point(15, 46);
-            this.returned_overdue.Name = "returned_overdue";
-            this.returned_overdue.Size = new System.Drawing.Size(50, 50);
-            this.returned_overdue.TabIndex = 20;
-            this.returned_overdue.Text = "10";
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Controls.Add(this.label25);
+            this.panel13.Controls.Add(this.pending_overdue);
+            this.panel13.Location = new System.Drawing.Point(826, 52);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(258, 125);
+            this.panel13.TabIndex = 11;
             // 
             // label25
             // 
@@ -859,16 +748,141 @@
             this.pending_overdue.TabIndex = 22;
             this.pending_overdue.Text = "10";
             // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.label23);
+            this.panel12.Controls.Add(this.returned_overdue);
+            this.panel12.Location = new System.Drawing.Point(559, 52);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(258, 125);
+            this.panel12.TabIndex = 10;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label23.Location = new System.Drawing.Point(20, 23);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(127, 23);
+            this.label23.TabIndex = 21;
+            this.label23.Text = "Returned Overdue";
+            // 
+            // returned_overdue
+            // 
+            this.returned_overdue.AutoSize = true;
+            this.returned_overdue.BackColor = System.Drawing.Color.Transparent;
+            this.returned_overdue.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returned_overdue.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.returned_overdue.Location = new System.Drawing.Point(15, 46);
+            this.returned_overdue.Name = "returned_overdue";
+            this.returned_overdue.Size = new System.Drawing.Size(50, 50);
+            this.returned_overdue.TabIndex = 20;
+            this.returned_overdue.Text = "10";
+            // 
+            // panel11
+            // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.label21);
+            this.panel11.Controls.Add(this.returned_ontime);
+            this.panel11.Location = new System.Drawing.Point(287, 52);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(258, 125);
+            this.panel11.TabIndex = 9;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label21.Location = new System.Drawing.Point(25, 23);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(128, 23);
+            this.label21.TabIndex = 19;
+            this.label21.Text = "Returned On-Time";
+            // 
+            // returned_ontime
+            // 
+            this.returned_ontime.AutoSize = true;
+            this.returned_ontime.BackColor = System.Drawing.Color.Transparent;
+            this.returned_ontime.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returned_ontime.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.returned_ontime.Location = new System.Drawing.Point(20, 46);
+            this.returned_ontime.Name = "returned_ontime";
+            this.returned_ontime.Size = new System.Drawing.Size(50, 50);
+            this.returned_ontime.TabIndex = 18;
+            this.returned_ontime.Text = "10";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label20);
+            this.panel2.Controls.Add(this.total_borrowed);
+            this.panel2.Location = new System.Drawing.Point(13, 52);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(258, 125);
+            this.panel2.TabIndex = 8;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label20.Location = new System.Drawing.Point(22, 26);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(141, 23);
+            this.label20.TabIndex = 17;
+            this.label20.Text = "Total Borrowed Book";
+            // 
+            // total_borrowed
+            // 
+            this.total_borrowed.AutoSize = true;
+            this.total_borrowed.BackColor = System.Drawing.Color.Transparent;
+            this.total_borrowed.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_borrowed.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.total_borrowed.Location = new System.Drawing.Point(17, 49);
+            this.total_borrowed.Name = "total_borrowed";
+            this.total_borrowed.Size = new System.Drawing.Size(50, 50);
+            this.total_borrowed.TabIndex = 16;
+            this.total_borrowed.Text = "10";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label17.Location = new System.Drawing.Point(28, 28);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(131, 50);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Reports";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Poppins Medium", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(864, 41);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(170, 33);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "View Requested";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1558, 796);
+            this.Controls.Add(this.books_panel);
             this.Controls.Add(this.report_panel);
             this.Controls.Add(this.staff_panel);
             this.Controls.Add(this.author_panel);
-            this.Controls.Add(this.books_panel);
             this.Controls.Add(this.dash_panel);
             this.Controls.Add(this.authors_panel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -912,18 +926,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.staff_grid)).EndInit();
             this.report_panel.ResumeLayout(false);
             this.report_panel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.history_grid)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -995,5 +1009,6 @@
         private System.Windows.Forms.Label returned_ontime;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label total_borrowed;
+        private System.Windows.Forms.Button button3;
     }
 }
