@@ -29,8 +29,7 @@ Make sure you have a local database set up with the following details:
 
 ## 📌 Course Information
 
-- **Course:** IT 120 - Event Driven Programming  
-- **Instructor:** *[Instructor's Name, optional]*  
+- **Course:** IT 120 - Event Driven Programming   
 - **Activities:** Activity 8 & Activity 9  
 - **Language:** C#  
 - **Framework:** .NET Framework / .NET Core (based on your setup)
