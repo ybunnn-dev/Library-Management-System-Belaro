@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.login_button = new System.Windows.Forms.Button();
@@ -67,6 +68,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.login_button);
@@ -80,13 +82,26 @@
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(468, 418);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(190, 36);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Forgot Password?";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(78, 354);
+            this.label4.Location = new System.Drawing.Point(78, 317);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(165, 36);
             this.label4.TabIndex = 6;
@@ -98,7 +113,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(78, 251);
+            this.label3.Location = new System.Drawing.Point(78, 219);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(172, 36);
             this.label3.TabIndex = 5;
@@ -110,7 +125,7 @@
             this.login_button.Font = new System.Drawing.Font("Poppins SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_button.Location = new System.Drawing.Point(84, 490);
             this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(566, 42);
+            this.login_button.Size = new System.Drawing.Size(566, 62);
             this.login_button.TabIndex = 4;
             this.login_button.Text = "LOGIN";
             this.login_button.UseVisualStyleBackColor = true;
@@ -119,7 +134,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(84, 393);
+            this.textBox2.Location = new System.Drawing.Point(84, 356);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(574, 42);
             this.textBox2.TabIndex = 3;
@@ -127,7 +142,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(84, 290);
+            this.textBox1.Location = new System.Drawing.Point(84, 258);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(574, 42);
             this.textBox1.TabIndex = 2;
@@ -148,11 +163,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Poppins", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(31, 555);
+            this.label1.Location = new System.Drawing.Point(127, 587);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(665, 141);
+            this.label1.Size = new System.Drawing.Size(501, 106);
             this.label1.TabIndex = 0;
             this.label1.Text = "Librong James";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -165,8 +180,10 @@
             this.ClientSize = new System.Drawing.Size(718, 761);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "LibroN James - Login";
+            this.Text = "Librong James - Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -188,6 +205,7 @@
         private System.Windows.Forms.Button login_button;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
