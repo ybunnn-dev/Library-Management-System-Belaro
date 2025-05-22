@@ -1279,8 +1279,7 @@ namespace Library_Management_System___Belaro
                 try
                 {
                     if (string.IsNullOrWhiteSpace(txtFirstName.Text) ||
-                        string.IsNullOrWhiteSpace(txtLastName.Text) ||
-                        cmbRole.SelectedItem == null)
+                        string.IsNullOrWhiteSpace(txtLastName.Text))
                     {
                         MessageBox.Show("Please fill in all required fields.", "Validation Error",
                             MessageBoxButtons.OK, MessageBoxIcon.Warning);

@@ -352,21 +352,25 @@ namespace Library_Management_System___Belaro
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "UPDATE borrowing SET staff_id = @staffId WHERE borrowing_id = @borrowingId";
 
-                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    using (MySqlCommand command = new MySqlCommand("approve_borrowing", connection))
                     {
-                        command.Parameters.AddWithValue("@staffId", this.staff_id);
-                        command.Parameters.AddWithValue("@borrowingId", borrowingId);
+                        command.CommandType = CommandType.StoredProcedure;
 
-                        int rowsAffected = command.ExecuteNonQuery();
+                        command.Parameters.AddWithValue("@p_borrowing_id", borrowingId);
+                        command.Parameters.AddWithValue("@p_staff_id", this.staff_id);
 
-                        if (rowsAffected > 0)
+                        using (MySqlDataReader reader = command.ExecuteReader())
                         {
-                            MessageBox.Show("Borrowing approved successfully!");
-                            loadCompletedPending(); // Refresh the grid
-                            UpdateInventory(); // Update inventory counts
+                            if (reader.Read())
+                            {
+                                string result = reader["result"].ToString();
+                                MessageBox.Show(result);
+                            }
                         }
+
+                        loadCompletedPending(); // Refresh the grid
+                        UpdateInventory(); // Update inventory counts
                     }
                 }
             }
@@ -375,6 +379,7 @@ namespace Library_Management_System___Belaro
                 MessageBox.Show("Error approving borrowing: " + ex.Message);
             }
         }
+
 
         private void CancelBorrowing(int borrowingId)
         {

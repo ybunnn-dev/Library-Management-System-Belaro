@@ -197,5 +197,10 @@ namespace Library_Management_System___Belaro
                 requestedBooks.DataSource = _booksData.Clone(); // Empty table with same structure
             }
         }
+
+        private void requestedBooks_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

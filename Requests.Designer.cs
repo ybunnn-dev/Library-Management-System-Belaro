@@ -56,6 +56,7 @@
             this.requestedBooks.RowTemplate.Height = 24;
             this.requestedBooks.Size = new System.Drawing.Size(709, 372);
             this.requestedBooks.TabIndex = 1;
+            this.requestedBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.requestedBooks_CellContentClick);
             // 
             // search
             // 
